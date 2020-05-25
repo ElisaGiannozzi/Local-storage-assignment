@@ -1,12 +1,25 @@
-// function storeData (){
-//     let input = document.getElementById('task'); 
-//     localStorage.setItem('myTask', input.value); 
-//     let storedValue = localStorage.getItem('myTask'); 
-// }
+$('#task-form').submit(function(e) {
+    const task = $('#task').val(); 
 
-function storeData (){
-    let input = document.getElementById('task'); 
-    localStorage.setItem('myTask', input.value); 
-    let storedValue = JSON.parse(localStorage.getItem('myTask'));
-}
+    let tasks; 
 
+    if(localStorage.getItem('tasks') === null) {
+        tasks = []; 
+    } else {
+        tasks = JSON.parse(localStorage.getItem('tasks')); 
+    }
+
+    tasks.push(task); 
+
+    localStorage.setItem('tasks', JSON.stringify(tasks)); 
+})
+
+
+
+// const tasks = JSON.parse(localStorage.getItem('tasks')); 
+
+// // tasks.forEach(function(task){
+// //     $('tasks-container').append('task'); 
+// // }); 
+
+// $('tasks-container').append('blablabla'); 
