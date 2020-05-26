@@ -27,7 +27,6 @@ body {
 
 .task-input {
     border: none; 
-    border-radius: 5%; 
     min-height: 35px; 
     min-width: 200px; 
     font-family: 'Roboto', sans-serif;
