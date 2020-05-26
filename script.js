@@ -16,10 +16,14 @@ $('#task-form').submit(function(e) {
 
 
 
-// const tasks = JSON.parse(localStorage.getItem('tasks')); 
+const tasks = JSON.parse(localStorage.getItem('tasks')); 
 
-// // tasks.forEach(function(task){
-// //     $('tasks-container').append('task'); 
-// // }); 
+$(function() {
+    let list = $('<ul></ul>'); 
+    $.each(tasks, function(key, value) {
+        list.append(`<li>${value}</li>`);
+    });
 
-// $('tasks-container').append('blablabla'); 
+    $('.tasks-container').append(list);
+}); 
+

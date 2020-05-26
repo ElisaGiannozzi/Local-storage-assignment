@@ -1,0 +1,57 @@
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
+.container {
+    background-color: #E6D058;
+    max-width: 300px;
+    margin: 0 auto;  
+    padding: 10px; 
+
+}
+
+.tasks-container ul {
+    padding-left: 0; 
+}
+
+.tasks-container li {
+    padding: 10px; 
+    list-style-type: none; 
+    border-bottom: 1px solid #AD7532; 
+    margin: 0 15px 0 15px; 
+}
+
+#task-form {
+    text-align: center; 
+}
+
+.task-input {
+    border: none; 
+    border-radius: 5%; 
+    min-height: 35px; 
+    min-width: 200px; 
+    font-family: 'Roboto', sans-serif;
+}
+
+.task-input::placeholder {
+    font-size: 16px; 
+} 
+
+.submit-button {
+    min-height: 35px; 
+    min-width: 50px; 
+    border: none; 
+    border-radius: 5%; 
+    background-color: #3AA5A8; 
+    font-size: 16px; 
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold; 
+}
+
+.submit-button:hover {
+    cursor: pointer;
+    background-color: #399497;  
+    color: white; 
+
+}
+
